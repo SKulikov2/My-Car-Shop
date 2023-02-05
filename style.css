@@ -1,0 +1,78 @@
+body {
+    font-family: 'Jost';
+
+}
+
+/* Убираем стилизацию ссылок */
+a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+}
+
+.container {
+    max-width: 1366px;
+    background-color: beige;
+    /* даже при использовании более узкого экрана содержание будет цертироваться */
+    margin: 0 auto;
+    /* необходимо чтобы надписи не прилипали к краям экрана */
+    padding: 10px 15px;
+}
+
+.navTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+}
+
+ul {
+margin: 0px;
+padding: 0px;
+list-style: none;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-item {
+    font-size: 22px;
+    padding-right: 30px;
+}
+
+/* .logo-item {
+    margin: 0 auto ;
+} */
+
+.phone {
+    font-size: 22px;
+
+}
+
+.navBottom {
+    display: flex;
+    margin-top: 30px;
+
+}
+
+.model-item {
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.model-name {
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    position: absolute;
+    top: 110px;
+}
+
+.slider {
+    margin-top: 50px;
+}
