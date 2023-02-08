@@ -11,7 +11,7 @@ a {
     font-weight: 500;
 }
 
-/* Работаем с nav */
+                                        /* Работаем с nav */
 
 .container {
     max-width: 1366px;
@@ -54,6 +54,8 @@ list-style: none;
 
 }
 
+                                        /* Выбор модели */
+
 .navBottom {
     display: flex;
     margin-top: 30px;
@@ -76,7 +78,7 @@ list-style: none;
     top: 110px;
 }
 
-/* Работаем со слайдером */
+                                        /* Слайдер */
 
 .slider {
     margin-top: 20px;
@@ -84,12 +86,12 @@ list-style: none;
 
 .sliderWrapper {
     display: flex;
+    justify-content: space-around;
     width: 500vw;
 }
 
 .sliderItem {
     width: 100vw;
-
 }
 
 .sliderTitle {
@@ -108,17 +110,27 @@ position: relative;
 }
 
 .front {
-    left: -20px
+    left: -20px;
+    cursor: pointer;
 }
 
 .back {
-    left: 20px
+    left: 20px;
+    cursor: pointer;
 }
 
-.mainImage {
+.mainImageFront {
     display: block;
     margin: 0 auto;
+}
 
+.mainImageBack {
+    display: block;
+    margin: 0 auto;
+}
+
+.hidden {
+    display: none;
 }
 
 /* Лого Camry меньше. Для того чтобы смотрелось корректнее, пришлось немного изменить настройки */
