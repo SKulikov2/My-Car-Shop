@@ -68,6 +68,11 @@ list-style: none;
     flex-direction: column;
     justify-content: center;
     cursor: pointer;
+    transition: opacity 0.2s ease-in;
+}
+
+.model-item:hover {
+    opacity: 0.8;
 }
 
 .model-name {
@@ -76,6 +81,8 @@ list-style: none;
     font-weight: 500;
     position: absolute;
     top: 110px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in;
 }
 
                                         /* Слайдер */
@@ -112,11 +119,21 @@ position: relative;
 .front {
     left: -20px;
     cursor: pointer;
+    transition: transform 0.2s ease-in;
+}
+
+.front:hover {
+    transform: translateY(-2px);
 }
 
 .back {
     left: 20px;
     cursor: pointer;
+    transition: transform 0.2s ease-in;
+}
+
+.back:hover {
+    transform: translateY(-2px);
 }
 
 .mainImageFront {
