@@ -95,6 +95,7 @@ list-style: none;
     display: flex;
     justify-content: space-around;
     width: 500vw;
+    transition: all 1s ease-in-out;
 }
 
 .sliderItem {

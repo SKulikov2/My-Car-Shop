@@ -4,7 +4,7 @@ const backSwitchers = document.querySelectorAll('.back')
 const frontSwitchers = document.querySelectorAll('.front')
 const backImages = document.querySelectorAll('.mainImageBack')
 const frontImages = document.querySelectorAll('.mainImageFront')
-console.log(frontImages);
+
 
 
 
