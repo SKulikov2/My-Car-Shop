@@ -19,6 +19,7 @@ for (let backSwitcher of backSwitchers) {
 
                 item.classList.remove('hidden')
                 frontImages[idx].classList.add('hidden')
+
         })
 
     // Прорабатываем смену вида с заднего на передний по клику на кнопку 'Вид спереди'
