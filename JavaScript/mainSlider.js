@@ -13,6 +13,7 @@ const products = [
 
       text: 'Лидер в сегменте STANDART (D) по сохранению остаточной стоимости в 2022г.',
       interiorImg: "./images/camry-interior.jpg",
+      backInteriorImg: "/images/camry-interior-back.jpg",
       colors: [
         {
             code: "white",
@@ -36,6 +37,7 @@ const products = [
 
       text: 'Второе место в сегменте SUV (C) по сохранению остаточной стоимости в 2021г.',
       interiorImg: "./images/rav4-interior.jpg",
+      backInteriorImg: "/images/rav4-interior-back.jpg",
       colors: [
         {
             code: "white",
@@ -59,6 +61,7 @@ const products = [
 
       text: 'Лидер сегмента SUV (D) по сохранению остаточной стоимости в 2018г.',
       interiorImg: "./images/highlander-interior.jpg",
+      backInteriorImg: "/images/highlander-interior-back.jpg",
       colors: [
         {
             code: "white",
@@ -82,6 +85,7 @@ const products = [
 
       text: 'Лидер в сегменте STANDART (Pickup) по сохранению остаточной стоимости в 2022г.',
       interiorImg: "./images/hilux-interior.jpg",
+      backInteriorImg: "/images/hilux-interior-back.jpg",
       colors: [
         {
             code: "white",
@@ -105,6 +109,7 @@ const products = [
 
       text: 'Третье место в сегменте SUV (D) по сохранению остаточной стоимости в 2022г.',
       interiorImg: "./images/prado-interior.jpg",
+      backInteriorImg: "/images/prado-interior-back.jpg",
       colors: [
         {
             code: "white",
@@ -134,6 +139,7 @@ const currentProductRewardText = document.querySelector('.rewardText')
 const currentProductColors = document.querySelectorAll('.color')
 const currentProductColorsNames = document.querySelectorAll('.colorName')
 const currentInteriorImg = document.querySelector('.interiorImg')
+const currentBackInteriorImg = document.querySelector('.backInteriorImg')
 
 
 
@@ -160,8 +166,12 @@ models.forEach((item, index) => {
 // Это изобоажение будет первым для каждой модели
         currentProductImg.src = choosenProduct.colors[0].img
 
-// Это изображение интерьера каждого ТС
+// Это изображение передней части интерьера интерьера каждого ТС
         currentInteriorImg.src = choosenProduct.interiorImg
+
+// Это изображение задней части интерьера интерьера каждого ТС
+
+        currentBackInteriorImg.src = choosenProduct.backInteriorImg
 
 // Меняем палитру цветов справа от картинки авто в соответствии с выбранной моделью
         currentProductColors.forEach((color, index) => {

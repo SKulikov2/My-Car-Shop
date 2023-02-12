@@ -297,7 +297,16 @@ position: relative;
 
                                     /* Интерьер */
 
-.interiorImg {
-    width: 100%;
-    height: 100vh;
+
+.interior {
+    display: flex;
+    height: 375px;
+}
+
+                                    .interiorImg {
+    /* display: block;
+    margin: 0 auto; */
+    width: 50%;
+    /* width: 100%;
+    height: 100vh; */
 }
