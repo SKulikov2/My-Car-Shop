@@ -20,13 +20,13 @@
             <div class="navTop">
                 <ul class="menu">
                     <li class="menu-item">
-                        <a class="menu-link" href="#about">Выбор цвета</a>
+                        <a class="menu-link" href="#carColor">Выбор цвета</a>
                     </li>
                     <li class="menu-item">
-                        <a href="#order" class="menu-link">Интерьер</a>
+                        <a class="menu-link" href="#interior">Интерьер</a>
                     </li>
                     <li class="menu-item">
-                        <a href="#features" class="menu-link">Преимущества</a>
+                        <a href="#ourAdvantages" class="menu-link">Преимущества</a>
                     </li>
                 </ul>
                 <!-- <a class="logo-item">
@@ -151,7 +151,7 @@
 
                             <!-- Работаем с выбором цвета -->
 
-    <div class="product">
+    <div class="product" id="carColor">
         <h3 class="chooseColor">Выбери свой цвет</h3>
         <p class="warranty">10 ЛЕТ ГАРАНТИИ <br>на окраску кузова</p>
         <div class="reward">
@@ -176,22 +176,26 @@
 
                                 <!-- Интерьер -->
     
-    <div class="interior">
+    <div class="interior" id="interior">
         <img class="interiorImg" src="./images/camry-interior.jpg" alt="">
         <img class="backInteriorImg" src="./images/camry-interior-back.jpg" alt="">
     </div>
 
                             <!-- Форма для обратной связи -->
 
-    <div class="contacts-wrapper">
+    <div class="contacts-wrapper" id="ourAdvantages">
+        <p class="price">Стоимость 43 000$</p>
+
         <h2 class="advantages-title">Наши преимущества</h2>
         <ul class="advantages">
             <li class="advantage">Гарантия 4 года</li>
             <li class="advantage">Trade-in</li>
             <li class="advantage">Низкие % ставки</li>
-            <li class="advantage">Машины в наличии</li>
+            <li class="advantage">В наличии все комплектации</li>
             <li class="advantage">Работаем 24 на 7</li>
+            <img class="finalImage" src="./images/camry-final.png" alt="">
         </ul>
+
         <div class="contacts-form">
             <h2 class="form-title">Заявка для обратной связи</h2>
             <form action="" class="feedBack">
@@ -200,6 +204,9 @@
                 <input type="text" class="input" name="phone" placeholder="Телефон">
                 <button type="submit" class="submitContacts">Отправить</button>
             </form>
+        </div>
+        <div>
+        <button class="getCar">Купить</button>
         </div>
     </div>
 

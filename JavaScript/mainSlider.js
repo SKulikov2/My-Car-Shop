@@ -14,6 +14,8 @@ const products = [
       text: 'Лидер в сегменте STANDART (D) по сохранению остаточной стоимости в 2022г.',
       interiorImg: "./images/camry-interior.jpg",
       backInteriorImg: "/images/camry-interior-back.jpg",
+      finalImg:"./images/camry-final.png",
+      price: 'Стоимость 43 000 $',
       colors: [
         {
             code: "white",
@@ -38,6 +40,8 @@ const products = [
       text: 'Второе место в сегменте SUV (C) по сохранению остаточной стоимости в 2021г.',
       interiorImg: "./images/rav4-interior.jpg",
       backInteriorImg: "/images/rav4-interior-back.jpg",
+      finalImg:"./images/rav4-final.png",
+      price: 'Стоимость 47 000 $',
       colors: [
         {
             code: "white",
@@ -62,6 +66,8 @@ const products = [
       text: 'Лидер сегмента SUV (D) по сохранению остаточной стоимости в 2018г.',
       interiorImg: "./images/highlander-interior.jpg",
       backInteriorImg: "/images/highlander-interior-back.jpg",
+      finalImg:"./images/highlander-final.png",
+      price: 'Стоимость 53 500 $',
       colors: [
         {
             code: "white",
@@ -86,6 +92,8 @@ const products = [
       text: 'Лидер в сегменте STANDART (Pickup) по сохранению остаточной стоимости в 2022г.',
       interiorImg: "./images/hilux-interior.jpg",
       backInteriorImg: "/images/hilux-interior-back.jpg",
+      finalImg:"./images/hilux-final.png",
+      price: 'Стоимость 39 900 $',
       colors: [
         {
             code: "white",
@@ -110,6 +118,8 @@ const products = [
       text: 'Третье место в сегменте SUV (D) по сохранению остаточной стоимости в 2022г.',
       interiorImg: "./images/prado-interior.jpg",
       backInteriorImg: "/images/prado-interior-back.jpg",
+      finalImg:"./images/prado-final.png",
+      price: 'Стоимость 60 000 $',
       colors: [
         {
             code: "white",
@@ -138,13 +148,17 @@ const currentProductImg = document.querySelector('.productImg')
 const currentProductRewardText = document.querySelector('.rewardText')
 const currentProductColors = document.querySelectorAll('.color')
 const currentProductColorsNames = document.querySelectorAll('.colorName')
+
+// DOM элементы для интерьера
+
 const currentInteriorImg = document.querySelector('.interiorImg')
 const currentBackInteriorImg = document.querySelector('.backInteriorImg')
 
 
+// DOM элементы для финальной части
 
-// Необходимо найти решения для LC Prado по факту цвет серый, а текстом написано 'Красный', как у остальных
-// const currentColorNames = document.querySelectorAll('.colorName')
+const currentFinalImg = document.querySelector('.finalImage')
+const currentPrice = document.querySelector('.price')
 
 
 
@@ -162,9 +176,12 @@ models.forEach((item, index) => {
 // Задаем каждой модели соответствующий текст номинации
         currentProductRewardText.textContent = choosenProduct.text;
 
-
 // Это изобоажение будет первым для каждой модели
         currentProductImg.src = choosenProduct.colors[0].img
+
+// Меняем палитру цветов справа от картинки авто в соответствии с выбранной моделью
+        currentProductColors.forEach((color, index) => {
+            color.style.backgroundColor = choosenProduct.colors[index].code
 
 // Это изображение передней части интерьера интерьера каждого ТС
         currentInteriorImg.src = choosenProduct.interiorImg
@@ -173,20 +190,22 @@ models.forEach((item, index) => {
 
         currentBackInteriorImg.src = choosenProduct.backInteriorImg
 
-// Меняем палитру цветов справа от картинки авто в соответствии с выбранной моделью
-        currentProductColors.forEach((color, index) => {
-            color.style.backgroundColor = choosenProduct.colors[index].code
+// Это изображение каждого ТС в последнем блоке
+        currentFinalImg.src = choosenProduct.finalImg
+
+// Это стоимость уаждого ТС в последнем блоке
+
+        currentPrice.textContent = choosenProduct.price
+
+
         })
 
-// Меняем названия цветов, в данном примере актуально для Prado, так как вместо красного у него серый
+// Меняем названия цветов
         currentProductColorsNames.forEach((name, index) => {
             name.textContent = choosenProduct.colors[index].name
         })
-
-
     })
 })
-
 
 // Меняем цвет по нажатию на соответствующую кнопку
 currentProductColors.forEach((color, index)=> {
