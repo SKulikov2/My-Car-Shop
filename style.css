@@ -89,6 +89,7 @@ list-style: none;
 
 .slider {
     margin-top: 20px;
+    border-color: whitesmoke;
 
 }
 
@@ -153,9 +154,29 @@ position: relative;
     display: none;
 }
 
-/* Лого Camry меньше. Для того чтобы смотрелось корректнее, пришлось немного изменить настройки */
 .camryImage {
-    margin-top: 40px;
+    position: relative;
+    top: 20px;
+}
+
+.ravImage {
+    position: relative;
+    top: -25px;
+}
+
+.highlanderImage {
+    position: relative;
+    top: 25px;
+}
+
+.hiluxImage {
+    position: relative;
+    top: -25px; 
+}
+
+.pradoImage{
+    position: relative;
+    top: -15px; 
 }
 
 .features {
@@ -167,8 +188,9 @@ position: relative;
 
 /* Лого Camry меньше. Для того чтобы смотрелось корректнее, пришлось немного изменить настройки */
 .camryFeatures {
+
     position: relative;
-    bottom: 120px;
+    bottom: 75px;
 }
 
 .ravFeatures {
@@ -176,9 +198,16 @@ position: relative;
     bottom: 45px;
 }
 
+.highlanderFeatures {
+    position: relative;
+    bottom: 48px;
+    left: 30px;
+}
+
 .hiluxFeatures {
     position: relative;
     bottom: 48px;
+    left: 30px;
 }
 
 .pradoFeatures {
@@ -186,15 +215,8 @@ position: relative;
     bottom: 18px;
 }
 
-.highlanderFeatures {
-    position: relative;
-    bottom: 48px;
-}
-
 .feature {
-    padding-right: 30px;
-    /* position: relative;
-    bottom: 150px; */
+    padding-right: 20px;
 }
 
                                     /* Выбор цвета */
@@ -311,7 +333,7 @@ position: relative;
 
 .contacts-wrapper {
     height: 100vh;
-    background-color: beige;
+    background-color: whitesmoke;
 }
 
 .advantages-title {
@@ -336,7 +358,7 @@ position: relative;
     display: inline-block;
     position: relative;
     padding: 20px;
-    background-color: beige;
+    background-color: whitesmoke;
     border-radius: 10px;
     border: 1.5px solid black;
     top: 150px;
@@ -355,7 +377,7 @@ position: relative;
 }
 
 .input {
-    background-color: beige;
+    background-color: whitesmoke;
     padding: 5px 5px;
     border: 1px solid black;
     border-radius: 5px;
@@ -385,7 +407,7 @@ position: relative;
 .finalImage {
     display: block;
     position: absolute;
-    top: 2050px;
+    top: 2000px;
     right: 170px;
 }
 
@@ -395,7 +417,7 @@ position: relative;
     color: black;
     position: relative;
     margin: 0;
-    top: 220px;
+    top: 200px;
     right: -680px;
 }
 
