@@ -208,10 +208,33 @@
         <div>
         <button class="getCar">Купить</button>
         </div>
+        <div class="payment hidden">
+            <h1 class="payTitle">Личная информация</h1>
+            <label for="">Имя и Фамилия</label>
+            <input type="text" class="payInput" placeholder="Иван Петров">
+            <label for="">Телефон</label>
+            <input type="text" class="payInput" placeholder="+7 999 000 11 22">
+            <label for="">Адрес</label>
+            <input type="text" class="payInput" placeholder="ул. Мира, д.1, кв.2">
+            <h1 class="payTitle">Банковская карта</h1>
+            <div class="kindOfCards">
+                <img class="cardLabel" src="./images/visa.png" alt="" width="40px">
+                <img class="cardLabel" src="./images/master.png" alt="" width="40px">
+            </div>
+            <input type="password" class="payInput" placeholder="Номер карты">
+            <div class="date">
+                <input type="text" class="cardInput" placeholder="mm">
+                <input type="text" class="cardInput" placeholder="yyyy">
+                <input type="password" class="cardInput"placeholder="cvv">
+            </div>
+            <span class="close">X</span>
+            <button class="payButton">Оплатить</button>
+        </div>
+        <button class="up-button">Назад</button>
     </div>
-
-
     <script src="./JavaScript/frontOrBackSwitcher.js"></script>
     <script src="./JavaScript/mainSlider.js"></script>
+    <script src="./JavaScript/toBuy.js"></script>
+    <script src="./JavaScript/upButton.js"></script>
 </body>
 </html>

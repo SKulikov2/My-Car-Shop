@@ -150,10 +150,6 @@ position: relative;
     margin: 0 auto;
 }
 
-.hidden {
-    display: none;
-}
-
 .camryImage {
     position: relative;
     top: 20px;
@@ -379,8 +375,8 @@ position: relative;
 .input {
     background-color: whitesmoke;
     padding: 5px 5px;
-    border: 1px solid black;
-    border-radius: 5px;
+    border: none;
+    border-bottom: 1px solid black;
     cursor: pointer;
 }
 
@@ -438,3 +434,119 @@ position: relative;
     background-color: white;
     color: black;
 }
+
+        /* Форма для оплаты */
+
+.payment {
+    width: 500px;
+    height: 500px;
+    background-color: whitesmoke;
+    position: absolute;
+    top: 2020px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 10px 30px;
+    /* border-radius: 10px; */
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    box-shadow: 13px 9px 19px 0px rgba(0,0,0,0.61);
+    -webkit-box-shadow: 13px 9px 19px 0px rgba(0,0,0,0.61);
+    -moz-box-shadow: 13px 9px 19px 0px rgba(0,0,0,0.61);
+}
+
+.payTitle {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+label {
+    font-size: 18px;
+}
+
+.cardLabel {
+    margin-right: 7px;
+}
+
+.payInput {
+    font-size: 16px;
+    background-color: whitesmoke;
+    margin-bottom: 10px;
+    padding: 5px 5px;
+    border: none;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+}
+
+.date {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardInput {
+    width: 30%;
+    background-color: whitesmoke;
+    border: none;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+}
+
+.close {
+    font-weight: 500;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    background-color: lightgrey;
+    position: relative;
+    bottom: 450px;
+    left: 490px;
+    cursor: pointer;
+}
+
+.payButton {
+    height: 40px;
+    width: 100%;
+    color: white;
+    background-color: green;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border: none;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+                            /* Кнопка прокрутки вверх */
+
+.up-button {
+    position: fixed;
+    z-index: 1;
+    bottom: 75px;
+    right: 20px;
+    width: 80px;
+    height: 80px;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    background-color: green;
+    opacity: 0.5;
+    color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    cursor: pointer; 
+    display: none;
+}
+
+.shown {
+    display: inline-block;
+    }
