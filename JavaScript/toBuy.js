@@ -12,3 +12,5 @@ buyButton.addEventListener('click', () => {
 close.addEventListener('click', () => {
     payment.classList.add('hidden')
 })
+
+
