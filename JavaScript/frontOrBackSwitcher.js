@@ -17,8 +17,9 @@ for (let backSwitcher of backSwitchers) {
     backSwitcher.addEventListener('click', () => {
         backImages.forEach((item, idx) => {
 
-                item.classList.remove('hidden')
+                item.classList.remove('hidden'),
                 frontImages[idx].classList.add('hidden')
+                
 
         })
 

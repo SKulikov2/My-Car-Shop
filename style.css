@@ -143,6 +143,7 @@ position: relative;
 .mainImageFront {
     display: block;
     margin: 0 auto;
+    
 }
 
 .mainImageBack {
@@ -389,6 +390,7 @@ position: relative;
     border-radius: 7px;
     border: 2px solid white;
     cursor: pointer;
+    transition: background-color 0.5s, transform 0.5s;
 }
 
 .submitContacts:hover {
@@ -398,6 +400,7 @@ position: relative;
     border-radius: 7px;
     border: 2px solid black;
     cursor: pointer;
+    transform: scale(105%);
 }
 
 .finalImage {
@@ -428,11 +431,13 @@ position: relative;
     color: white;
     border-radius: 7px;
     cursor: pointer;
+    transition: background-color 0.5s, transform 0.5s;
 }
 
 .getCar:hover {
     background-color: white;
     color: black;
+    transform: scale(105%)
 }
 
         /* Форма для оплаты */

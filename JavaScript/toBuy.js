@@ -10,7 +10,9 @@ buyButton.addEventListener('click', () => {
 })
 
 close.addEventListener('click', () => {
-    payment.classList.add('hidden')
+    //Валидны оба способа, описанные ниже.
+    payment.style.display = 'none'
+    // payment.classList.add('hidden')
 })
 
 
