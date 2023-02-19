@@ -559,4 +559,26 @@ label {
 
 .shown {
     display: inline-block;
+}
+
+
+            /* Адаптив */
+
+@media screen and (max-width:1330px) {
+
+.navTop {
+    width: 100%;
     }
+
+.navBottom {
+    width: 100%;
+}
+
+.navItemImg {
+    width: 100%;
+}
+
+.model-name {
+    display: none;
+}
+}
