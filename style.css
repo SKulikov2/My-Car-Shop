@@ -567,18 +567,92 @@ label {
 @media screen and (max-width:1330px) {
 
 .navTop {
-    width: 100%;
+    max-width: 100%;
     }
 
 .navBottom {
-    width: 100%;
-}
+    /* flex-wrap: wrap; */
+    }
 
 .navItemImg {
     width: 100%;
+    }   
+
+    .sliderItem {
+        max-width: 100%;
+    }
+
+    .product {
+        max-width: 100%;
+    }
+
+    .interiorImg {
+        max-width: 50%;
+    }
+
+    .backInteriorImg {
+        max-width: 50%;
+    }
+
+    .advantages-title {
+        min-width: 100%;
+    }
 }
+
+@media screen and (max-width:1280px) {
+    .getCar {
+        left:1100px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+
+    .warranty {
+        font-size: 30px;
+    }
+
+    .reward {
+
+        column-gap: 20px;
+    
+    }
+    
+    .rewardImage{
+        width: 20%;
+    
+    }
+    
+    .rewardText {
+        font-size: 15px;
+    }
+
+    .advantages {
+        justify-content: center;
+        column-gap: 60px;
+    }
+
+}
+
+@media screen and (max-width:1044px) {
 
 .model-name {
     display: none;
+    }    
 }
+
+@media screen and (max-width:900px) {
+
+.menu {
+display: flex;
+margin: 0 auto;
+    } 
+
+.menu-item {
+    font-size: 20px;
+    }
+
+
+.phone {
+    display: none;
+    }    
 }
