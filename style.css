@@ -210,14 +210,31 @@ position: relative;
     column-gap: 15px;
 }
 
+.mobile-features {
+    display: none;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 400;
+    column-gap: 5px;
+}
+
 /* Лого Camry меньше. Для того чтобы смотрелось корректнее, пришлось немного изменить настройки */
 .camryFeatures {
+    position: relative;
+    bottom: 75px;
+}
 
+.mobile-camryFeatures {
     position: relative;
     bottom: 75px;
 }
 
 .ravFeatures {
+    position: relative;
+    bottom: 45px;
+}
+
+.mobile-ravFeatures {
     position: relative;
     bottom: 45px;
 }
@@ -228,15 +245,31 @@ position: relative;
     left: 30px;
 }
 
+.mobile-highlanderFeatures {
+    position: relative;
+    bottom: 48px;
+}
+
 .hiluxFeatures {
     position: relative;
     bottom: 48px;
-    left: 30px;
+}
+
+.mobile-hiluxFeatures {
+    position: relative;
+    bottom: 48px;
+    right: 15px;
 }
 
 .pradoFeatures {
     position: relative;
     bottom: 18px;
+}
+
+.mobile-pradoFeatures {
+    position: relative;
+    bottom: 18px;
+    right: 20px;
 }
 
                                     /* Выбор цвета */
@@ -587,7 +620,6 @@ label {
             /* Адаптив */
 
 @media screen and (max-width:1330px) {
-
 .navTop {
     max-width: 100%;
     }
@@ -595,8 +627,8 @@ label {
 .navItemImg {
     width: 100%;
     }   
-
 }
+
 
 @media screen and (max-width:1140px) {
     .model-name {
@@ -604,11 +636,20 @@ label {
     }
 }
 
+
 @media screen and (max-width:1040px) {
     .navBottom {
     flex-wrap: wrap;
     justify-content: space-around;
-    } */
+    }
+
+    .mainImageFront {
+        width: 80%;
+    }
+    
+    .mainImageBack {
+        width: 80%;
+    }
 
     .model-name {
         margin-top: 30px;
@@ -640,8 +681,8 @@ label {
     }
 }
 
-@media screen and (max-width:940px) {
 
+@media screen and (max-width:940px) {
     .highlanderFeatures {
         bottom: 30px;
         left: 15px;
@@ -653,11 +694,11 @@ label {
 
     .pradoFeatures {
         left: -5px;
-    }
+    }   
 }
 
-@media screen and (max-width:840px) {
 
+@media screen and (max-width:840px) {
     .features {
         font-size: 19px;
         column-gap: 5px;
@@ -676,6 +717,7 @@ label {
         left: -10px;
     }
 }
+
 
 @media screen and (max-width:808px) {
     .model-name-prado {
@@ -723,15 +765,83 @@ label {
         transition: top 0.5s;
     }
 
+    .features {
+        font-size: 18px;
+    }
 }
     
 
+@media screen and (max-width:734px) {
+    .features {
+        font-size: 17px;
+    }
+}
 
 
+@media  screen and (max-width:700px) {
+    .features {
+        display: none;
+    }
+
+    .mobile-features {
+        display: block;
+    }
+}
 
 
+@media screen and (max-width:650px) {
+    .mobile-highlanderFeatures {
+        left: 10px;
+    }
+
+    .mobile-hiluxFeatures {
+        left: 2px;
+    }
+    
+    .mobile-pradoFeatures {
+        right: 9px;
+    }
+}
 
 
+@media screen and (max-width:557px) {
+    .navBottom {
+        flex-wrap: nowrap;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .model-item {
+        display: block;
+        flex-direction: row;
+        margin-left: 80px;
+        height: 100px;
+    }
+
+    .model-name {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        right: -220px;
+        top: -100px;
+    }
+
+    .model-name-prado {
+        margin-top: 25px;
+    }
+
+    .model-name-highlander {
+        margin-top: 25px;
+    }
+
+    .model-name-hilux {
+        margin-top: 25px;
+    }
+
+    .navItemImg {
+        width: 50%;
+    }
+}
 
 
 
