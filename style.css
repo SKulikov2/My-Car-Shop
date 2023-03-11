@@ -221,7 +221,7 @@ position: relative;
 /* Лого Camry меньше. Для того чтобы смотрелось корректнее, пришлось немного изменить настройки */
 .camryFeatures {
     position: relative;
-    bottom: 75px;
+    bottom: 85px;
 }
 
 .mobile-camryFeatures {
@@ -340,25 +340,23 @@ position: relative;
     width: 550px;
     align-items: center;
     position: absolute;
-    top: 850px;
+    top: 865px;
     left: 100px;
-    column-gap: 30px;
-
 }
 
 .rewardImage{
-    width: 30%;
+    width: 20%;
 
 }
 
 .rewardText {
+    flex-basis: 440px;
     margin: 0;
     text-align: center;
     font-size: 22px;
 }
 
 .warranty {
-    display: flex;
     text-align: center;
     position: absolute;
     color: red;
@@ -676,15 +674,51 @@ label {
         column-gap: 10px;
     }
 
+    .camryFeatures {
+        bottom: 140px;
+    }
+
+    .highlanderFeatures {
+        bottom: 80px;
+        left: 15px;
+    }
+
     .hiluxFeatures {
         left: 20px;
     }
+
+    .reward {
+        top: 980px;
+    }
+
+    .warranty {
+        top: 1000px;
+        right: 40px;
+        font-size: 30px;
+    }
+
+    .colorOptions {
+        flex-direction: column;
+        margin-top: 110px;
+    }
+
+    .productImg {
+        width: 80%;
+    }
+    
+    .colors {
+        display: flex;
+        column-gap: 40px;
+        margin: 0 auto;
+    }
+
+
 }
 
 
 @media screen and (max-width:940px) {
     .highlanderFeatures {
-        bottom: 30px;
+        bottom: 80px;
         left: 15px;
     }
 
@@ -704,12 +738,17 @@ label {
         column-gap: 5px;
     }
 
+    .camryFeatures {
+        bottom: 100px;
+    }
+
     .hiluxFeatures {
         width: 95%;
         left: 25px;
     }
 
     .highlanderFeatures {
+        bottom: 60px;
         left: 20px;
     }
 
@@ -785,13 +824,26 @@ label {
 
     .mobile-features {
         display: block;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .mobile-camryFeatures {
+        position: relative;
+        bottom: 75px;
+    }
+
+    .mobile-highlanderFeatures {
+        position: relative;
+        bottom: 15px;
     }
 }
 
 
 @media screen and (max-width:650px) {
+
     .mobile-highlanderFeatures {
-        left: 10px;
+            left: 10px;
     }
 
     .mobile-hiluxFeatures {
@@ -805,6 +857,10 @@ label {
 
 
 @media screen and (max-width:557px) {
+    .phone {
+        font-size: 20px;
+    }
+
     .navBottom {
         flex-wrap: nowrap;
         display: flex;
@@ -812,45 +868,140 @@ label {
     }
 
     .model-item {
-        display: block;
-        flex-direction: row;
-        margin-left: 80px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
         height: 100px;
+    }
+
+    .model-item:nth-child(5) {
+        margin-bottom: -25px;
     }
 
     .model-name {
         display: flex;
         flex-direction: column;
         position: relative;
-        right: -220px;
-        top: -100px;
+        align-items: center;
+        left: 0px;
+        top: -60px;
+        font-size: 18px;
+    }
+
+    .model-name-camry {
+        margin-top: 30px;
+    }
+
+    .model-name-rav {
+        margin-top: 30px;
     }
 
     .model-name-prado {
-        margin-top: 25px;
+        margin-top: 30px;
     }
 
     .model-name-highlander {
-        margin-top: 25px;
+        margin-top: 30px;
     }
 
     .model-name-hilux {
-        margin-top: 25px;
+        margin-top: 30px;
     }
 
     .navItemImg {
-        width: 50%;
+        width: 60%;
+    }
+
+    .sliderTitle {
+        font-size: 22px;
+    }
+
+    .mobile-camryFeatures {
+        bottom: 40px;
+    }
+
+    .mobile-ravFeatures {
+        left: 8px;
+    }
+
+    .mobile-highlanderFeatures {
+        left: 16px;
+    }
+
+    .mobile-hiluxFeatures {
+        max-width: 100%;
+        margin-left: 15px;
+    }
+
+    .mobile-pradoFeatures {
+        right: 4px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .phone {
+        font-size: 18px;
+    }
+
+    .model-item {
+        margin-bottom: 15px;
+    }
+
+    .model-item:nth-child(5) {
+        margin-bottom: -30px;
+    }
+
+    .navItemImg {
+        width: 60%;
+    }
+
+    .mainImageFront {
+        width: 90%;
+    }
+    
+    .mainImageBack {
+        width: 90%;
+    }
+    .mobile-hiluxFeatures {
+        margin-left: 25px;
     }
 }
 
 
+@media screen and (max-width:412px) {
 
+    .phone {
+        font-size: 18px;
+    }
 
+    .model-item {
+        margin-bottom: 10px;
+    }
 
+    .model-name {
+        top: -50px;
+    }
 
+    .mobile-features {
+        font-size: 16px;
+    }
 
+}
 
+@media screen and (max-width:412px) {
+    .navItemImg {
+    width: 70%;
+    }
 
+    .mobile-features {warranty
+        margin: 5px auto;
+    }
+
+    .mobile-feature:nth-child(3) {
+        display: block;
+        margin-top: 5px;
+    }
+}
 
 
 /*    .sliderItem {
