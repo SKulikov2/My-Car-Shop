@@ -289,7 +289,8 @@ position: relative;
 .chooseColor {
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 30px;
+    margin-bottom: 0;
     font-size: 28px;
     font-weight: 500;
 }
@@ -337,20 +338,18 @@ position: relative;
 
 .reward {
     display: flex;
-    width: 550px;
     align-items: center;
     position: absolute;
-    top: 865px;
-    left: 100px;
+    top: 840px;
+    left: 80px;
 }
 
 .rewardImage{
-    width: 20%;
-
+    width: 120px;
 }
 
 .rewardText {
-    flex-basis: 440px;
+    flex-basis: 400px;
     margin: 0;
     text-align: center;
     font-size: 22px;
@@ -361,8 +360,8 @@ position: relative;
     position: absolute;
     color: red;
     margin: 0;
-    top: 870px;
-    right: 100px;
+    top: 850px;
+    right: 60px;
     font-size: 40px;
     font-weight: 500;
 }
@@ -372,10 +371,13 @@ position: relative;
 
 .interior {
     display: flex;
-    height: 375px;
 }
 
 .interiorImg {
+    width: 50%;
+}
+
+.backInteriorImg {
     width: 50%;
 }
 
@@ -391,7 +393,8 @@ position: relative;
     font-weight: 500;
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    margin: 0 auto;
+    padding-top: 20px;
 }
 
 .advantages {
@@ -464,14 +467,13 @@ position: relative;
 }
 
 .price {
-    font-size: 26px;
-    font-weight: 500;
-    color: black;
-    position: relative;
-    margin: 0;
-    top: 200px;
-    right: -680px;
-}
+        display: flex;
+        margin-top: 60px;
+        font-size: 26px;
+        font-weight: 500;
+        color: black;
+        justify-content: center;
+    }
 
 .getCar {
     padding: 5px 20px;
@@ -632,6 +634,29 @@ label {
     .model-name {
         margin-top: 25px;
     }
+
+    .finalImage {
+        display: block;
+        position: relative;
+        top: 50px;
+        right: 0;
+        margin: 0 auto;
+    }
+
+    .contacts-form {
+        display: none;
+    }
+
+    .getCar {
+        top: -260px;
+        left: 820px;
+    }
+    
+    .getCar:hover {
+        background-color: white;
+        color: black;
+        transform: scale(105%)
+    }
 }
 
 
@@ -688,13 +713,18 @@ label {
     }
 
     .reward {
-        top: 980px;
+        top: 990px;
+        left: 60px;
+    }
+
+    .rewardText {
+        font-size: 20px;
     }
 
     .warranty {
-        top: 1000px;
-        right: 40px;
-        font-size: 30px;
+        top: 1010px;
+        right: 60px;
+        font-size: 26px;
     }
 
     .colorOptions {
@@ -704,17 +734,47 @@ label {
 
     .productImg {
         width: 80%;
+        margin-top: 40px;
     }
     
     .colors {
         display: flex;
         column-gap: 40px;
         margin: 0 auto;
+        position: relative;
+        bottom: 10px;
     }
 
+    .interior {
+        flex-direction: column;
+        gap: 5px;
+        width: 100%;
+    }
+    .interiorImg {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .backInteriorImg {
+        width: 100%;
+        margin: 0 auto;
+    }
 
+    .advantages {
+        width: 100%;
+        margin: 20px auto;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    .finalImage {
+        display: block;
+        position: relative;
+        top: 50px;
+        right: 0;
+        margin: 0 auto;
+    }
 }
-
 
 @media screen and (max-width:940px) {
     .highlanderFeatures {
@@ -729,8 +789,33 @@ label {
     .pradoFeatures {
         left: -5px;
     }   
+
+    .reward {
+        top: 940px;
+    }
+
+    .warranty {
+        top: 960px;
+    }
+
+    .colors {
+        bottom: -20px;
+    }
 }
 
+@media screen and (max-width:912px) {
+    .rewardImage {
+        width: 110px;
+    }
+
+    .reward {
+        left: 50px;
+    }
+
+    .warranty {
+        right: 50px;
+    }
+}
 
 @media screen and (max-width:840px) {
     .features {
@@ -755,6 +840,29 @@ label {
     .pradoFeatures {
         left: -10px;
     }
+
+    .rewardImage {
+        width: 100px;
+    }
+
+    .reward {
+        left: 30px;
+        top: 900px;
+    }
+
+    .rewardText {
+        font-size: 18px;
+    }
+
+    .warranty {
+        right: 30px;
+        font-size: 22px;
+        top: 920px
+    }
+
+    .colors {
+        bottom: -20px;
+    }
 }
 
 
@@ -765,6 +873,14 @@ label {
 
     .model-name-highlander {
         margin-top: 140px;
+    }
+
+    .reward {
+        top: 980px;
+    }
+
+    .warranty {
+        top: 1000px
     }
 }
 
@@ -807,12 +923,50 @@ label {
     .features {
         font-size: 18px;
     }
+
+    .rewardImage {
+        width: 80px;
+    }
+
+    .reward {
+        left: 20px;
+    }
+
+    .warranty {
+        top: 990px;
+        right: 20px;
+    }
 }
     
 
 @media screen and (max-width:734px) {
     .features {
         font-size: 17px;
+    }
+
+    .rewardImage {
+        display: block;
+        position: relative;
+        top: 120px;
+        margin: 0 auto;
+    }
+
+    .reward {
+        display: block;
+        margin: -100px auto;
+        left: 0;
+        right: 0;
+    }
+
+    .rewardText {
+        max-width: 400px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    .warranty {
+        top: 1060px;
+        right: 20px;
     }
 }
 
@@ -837,6 +991,14 @@ label {
         position: relative;
         bottom: 15px;
     }
+
+    .warranty {
+        top: 1040px;
+    }
+
+    .reward {
+        margin: -115px auto;
+    }
 }
 
 
@@ -853,6 +1015,39 @@ label {
     .mobile-pradoFeatures {
         right: 9px;
     }
+
+    .reward {
+        margin: -135px auto;
+    }
+
+    .warranty {
+        top: 1020px;
+        font-size: 18px;
+    } 
+
+    .productImg {
+        margin-top: 60px;
+    }
+}
+
+@media screen and (max-width:610px) {
+    .reward {
+        margin: -145px auto;
+    }
+
+    .rewardImage {
+        width: 70px;
+    }
+
+    .rewardText {
+        display: block;
+        max-width: 90%;
+    }
+
+    .productImg {
+        margin-top: 50px;
+    }
+
 }
 
 
@@ -936,6 +1131,32 @@ label {
     .mobile-pradoFeatures {
         right: 4px;
     }
+
+    .reward {
+        margin: 115px auto;
+    }
+
+    .rewardText {
+        font-size: 17px;
+    }
+
+    .warranty {
+        top: 1260px;
+    } 
+}
+
+@media screen and (max-width:540px) {
+
+}
+
+@media screen and (max-width:520px) {
+    .reward {
+        margin: 200px auto;
+    }
+
+    .rewardImage {
+        display: none;
+    }
 }
 
 @media screen and (max-width:480px) {
@@ -965,8 +1186,50 @@ label {
     .mobile-hiluxFeatures {
         margin-left: 25px;
     }
+
+    .reward {
+        margin: 110px auto;
+    }
+
+    .warranty {
+        top: 1155px;
+    }
 }
 
+
+
+@media screen and (max-width:460px) {
+    .reward {
+        margin: 100px auto;
+    }
+
+    .warranty {
+        top: 1145px;
+        left: 0;
+        right: 0;
+    }
+
+    .colors {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:420px) {
+    .reward {
+        margin: 85px auto;
+    }
+
+    .warranty {
+        top: 1130px;
+    }
+
+    .productImg {
+        margin-top: 70px;
+    }
+
+    .colors {
+        margin-top: 50px;    }
+}
 
 @media screen and (max-width:412px) {
 
@@ -978,28 +1241,39 @@ label {
         margin-bottom: 10px;
     }
 
+    .navItemImg {
+        width: 70%;
+        }    
+
     .model-name {
         top: -50px;
     }
 
     .mobile-features {
-        font-size: 16px;
-    }
-
-}
-
-@media screen and (max-width:412px) {
-    .navItemImg {
-    width: 70%;
-    }
-
-    .mobile-features {warranty
         margin: 5px auto;
     }
 
     .mobile-feature:nth-child(3) {
         display: block;
         margin-top: 5px;
+    }
+
+    .reward {
+        margin: 80px auto;
+    }
+
+    .warranty {
+        top: 1135px;
+    }
+}
+
+@media screen and (max-width:380px) {
+    .reward {
+        margin: 65px auto;
+    }
+
+    .warranty {
+        top: 1115px;
     }
 }
 
