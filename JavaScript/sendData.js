@@ -1,6 +1,19 @@
 // DOM элементы 
-
+const askFeedBackBtn = document.querySelector('.btnFeedBack')
+const submitContactsBtn = document.querySelector('.submitContacts')
+const myDataForm = document.querySelector('.contacts-form')
 const feedBackForm = document.querySelector('.feedBack')
+
+askFeedBackBtn.addEventListener('click', () => {
+    console.log('click');
+    myDataForm.classList.remove('hidden')
+})
+
+submitContactsBtn.addEventListener('click', () => {
+    console.log('click');
+    myDataForm.classList.add('hidden')
+})
+
 
 
 feedBackForm.addEventListener('submit', (event) => {

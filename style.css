@@ -408,14 +408,19 @@ position: relative;
 }
 
 .contacts-form {
+    width: 300px;
+    height: 300px;
     display: inline-block;
-    position: relative;
+    position: absolute;
     padding: 20px;
     background-color: whitesmoke;
     border-radius: 10px;
     border: 1.5px solid black;
-    top: 150px;
-    left: 30px;
+    top: 2000px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 
 .form-title {
@@ -461,9 +466,8 @@ position: relative;
 
 .finalImage {
     display: block;
-    position: absolute;
-    top: 2000px;
-    right: 170px;
+    margin: 0 auto;
+    top: 1950px;
 }
 
 .price {
@@ -475,13 +479,33 @@ position: relative;
         justify-content: center;
     }
 
+.btnFeedBack {
+    padding: 5px 20px;
+    font-size: 22px;
+    font-weight: 500;
+    position: absolute;
+    top: 2000px;
+    left: 100px;
+    background-color: black;
+    color: white;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: background-color 0.5s, transform 0.5s;
+}
+
+.btnFeedBack:hover {
+    background-color: white;
+    color: black;
+    transform: scale(105%)
+}
+
 .getCar {
     padding: 5px 20px;
     font-size: 22px;
     font-weight: 500;
-    position: relative;
-    top: -120px;
-    left: 1150px;
+    position: absolute;
+    top: 2000px;
+    right: 100px;
     background-color: black;
     color: white;
     border-radius: 7px;
@@ -635,16 +659,17 @@ label {
         margin-top: 25px;
     }
 
+    .product {
+        height: 100%;
+        padding-bottom: 80px;
+    }
+
     .finalImage {
         display: block;
         position: relative;
         top: 50px;
         right: 0;
         margin: 0 auto;
-    }
-
-    .contacts-form {
-        display: none;
     }
 
     .getCar {
