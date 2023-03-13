@@ -384,7 +384,6 @@ position: relative;
                     /* Заявка для обратной связи */
 
 .contacts-wrapper {
-    height: 100vh;
     background-color: whitesmoke;
 }
 
@@ -664,24 +663,78 @@ label {
         padding-bottom: 80px;
     }
 
-    .finalImage {
+    .reward {
+        top: 810px;
+    }
+
+    .warranty {
+        top: 820px;
+    }
+
+    .advantages {
+        width: 100%;
+        margin: 20px auto;
+        justify-content: center;
+        text-align: center;
+        column-gap: 90px;
+    }
+
+    .finalImage {    
         display: block;
         position: relative;
-        top: 50px;
-        right: 0;
+        top: 0px;
+        left: 20px;
         margin: 0 auto;
     }
 
-    .getCar {
-        top: -260px;
-        left: 820px;
+    .price {
+        display: flex;
+        margin-top: 20px;
+        font-size: 26px;
+        font-weight: 500;
+        color: black;
+        justify-content: center;
     }
-    
-    .getCar:hover {
+
+    .btnFeedBack {
+        padding: 5px 20px;
+        font-size: 22px;
+        font-weight: 500;
+        position: absolute;
+        top: 1840px;
+        left: 80px;
+        background-color: black;
+        color: white;
+        border-radius: 7px;
+        cursor: pointer;
+        transition: background-color 0.5s, transform 0.5s;
+    }
+
+    .btnFeedBack:hover {
         background-color: white;
         color: black;
         transform: scale(105%)
     }
+
+    .getCar {
+        padding: 5px 20px;
+        font-size: 22px;
+        font-weight: 500;
+        position: absolute;
+        top: 1840px;
+        right: 80px;
+        background-color: black;
+        color: white;
+        border-radius: 7px;
+        cursor: pointer;
+        transition: background-color 0.5s, transform 0.5s;
+    }
+
+    .getCar:hover {
+        background-color: white;
+        color: black;
+        transform: scale(105%)
+    }   
 }
 
 
@@ -775,6 +828,7 @@ label {
         gap: 5px;
         width: 100%;
     }
+
     .interiorImg {
         width: 100%;
         margin: 0 auto;
@@ -786,18 +840,14 @@ label {
     }
 
     .advantages {
-        width: 100%;
+        /* width: 100%;
         margin: 20px auto;
         justify-content: space-between;
-        text-align: center;
+        text-align: center; */
     }
 
     .finalImage {
-        display: block;
-        position: relative;
         top: 50px;
-        right: 0;
-        margin: 0 auto;
     }
 }
 
@@ -1301,174 +1351,3 @@ label {
         top: 1115px;
     }
 }
-
-
-/*    .sliderItem {
-        max-width: 100%;
-    }
-
-    .product {
-        max-width: 100%;
-    }
-
-    .interiorImg {
-        max-width: 50%;
-    }
-
-    .backInteriorImg {
-        max-width: 50%;
-    }
-
-    .advantages-title {
-        min-width: 100%;
-    }
-}
-
-
-
-@media screen and (max-width:1280px) {
-
-    .product {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: beige;
-        height: 80vh;
-    }
-
-    .contacts-wrapper {
-        height: 90vh;
-    }
-
-    .finalImage {
-        top: 2050px;
-        right: 150px;
-    }
-    
-    .price {
-        top: 240px;
-        right: -600px;
-    }
-
-    .getCar {
-        left:1100px;
-        scale: 0.9;
-    }
-}
-
-
-
-@media screen and (max-width:1200px) {
-
-    .warranty {
-        font-size: 30px;
-    }
-
-    .reward {
-        column-gap: 20px;
-    }
-    
-    .rewardImage{
-        width: 20%;
-    }
-    
-    .rewardText {
-        font-size: 18px;
-    }
-
-    .advantages {
-        width: 100%;
-        justify-content: center;
-        column-gap: 60px;
-    }
-
-    .finalImage {
-        scale: 0.9;
-    }
-
-}
-
-@media screen and (max-width:1044px) {
-
-.model-name {
-    display: none;
-    }    
-
-.mainImageFront {
-    scale: 0.9;
-    }
-
-.mainImageBack {
-    scale: 0.9;
-    }
-
-.features {
-    font-size: 18px;
-    font-weight: 500;
-    }
-}
-
-@media screen and (max-width:900px) {
-
-.menu {
-display: flex;
-margin: 0 auto;
-    } 
-
-.menu-item {
-    font-size: 20px;
-    }
-
-
-.phone {
-    display: none;
-    }    
-
-.mainImageFront {
-        scale: 0.9;
-    }
-    
-.mainImageBack {
-        scale: 0.9;
-    }
-
-    .warranty {
-        top: 800px;
-        font-size: 20px;
-    }
-
-    .reward {
-        flex-direction: column;
-        width: 400px;
-        align-items: center;
-        top: 750px;
-        row-gap: 20px;
-    }
-    
-    .rewardImage{
-        width: 20%;
-    }
-    
-    .rewardText {
-        font-size: 16px;
-    }
-
-    .colorOptions {
-        column-gap: 50px;
-        margin-top: 200px;
-    }
-
-    .interior {
-        height: 100%;
-    }
-
-    .advantages-title {
-        font-size: 22px;
-    }
-    
-    .advantages {
-        column-gap: 40px;
-        font-size: 18px;
-        margin-top: 30px;
-    }
-} */
