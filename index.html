@@ -12,9 +12,7 @@
     <title>Buy new car</title>
 </head>
 <body>
-
                     <!-- Панель навигации -->
-
     <nav class="nav" id="nav">
         <div class="container">
             <div class="navTop">
@@ -47,9 +45,7 @@
                     </li>
                 </ul>                
             </div>
-
                     <!-- Выбор модели -->
-
             <div class="navBottom">
                 <div class="model-item">
                     <img class="navItemImg" src="./images/Camry.png" alt="">
@@ -73,9 +69,7 @@
                 </div>
             </div>
         </div>
-
                     <!-- Слайдер -->
-
         <div class="slider">
             <div class="sliderWrapper">
                 <div class="slidrItem">
@@ -186,9 +180,7 @@
             </div>
         </div>
     </nav>
-
                             <!-- Работаем с выбором цвета -->
-
     <div class="product" id="carColor">
         <h3 class="chooseColor">Выбери свой цвет</h3>
         <p class="warranty">10 ЛЕТ ГАРАНТИИ <br>на окраску кузова</p>
@@ -211,76 +203,68 @@
             </div>
         </div>
     </div>
-
                                 <!-- Интерьер -->
-    
     <div class="interior" id="interior">
         <img class="interiorImg" src="./images/camry-interior.jpg" alt="">
         <img class="backInteriorImg" src="./images/camry-interior-back.jpg" alt="">
     </div>
-
                 <!-- Завершающая страница + Форма для обратной связи -->
-
     <div class="contacts-wrapper" id="ourAdvantages">
-
-
-        <h2 class="advantages-title">Наши преимущества</h2>
-        <ul class="advantages">
-            <li class="advantage">Гарантия 4 года</li>
-            <li class="advantage">Trade-in</li>
-            <li class="advantage">Низкие % ставки</li>
-            <li class="advantage">В наличии все комплектации</li>
-            <li class="advantage">Работаем 24 на 7</li>
-        </ul>
-        <div class="priceAndImage">
-            <p class="price">Стоимость 43 000$</p>
-            <img class="finalImage" src="./images/camry-final.png" alt="">
-        </div>
-        <div>
-            <button class="btnFeedBack">Спросить</button>
-        </div>
-        <div class="contacts-form hidden">
-            <h2 class="form-title">Заявка для обратной связи</h2>
-            <form action="" class="feedBack">
-                <input type="text" class="input" name="name" placeholder="Ваше имя">
-                <input type="mail" class="input" name="mail" placeholder="Электронная почта">
-                <input type="text" class="input" name="phone" placeholder="Телефон">
-                <input type="text" class="input" name="request" placeholder="Текст вопроса">
-
-                <button type="submit" class="submitContacts">Отправить</button>
-            </form>
-        </div>
-
-                        <!--Кнопка покупки и персональные данные  -->
-
-        <div>
-        <button class="getCar">Купить</button>
-        </div>
-        <div class="payment hidden">
-            <h1 class="payTitle">Личная информация</h1>
-            <form class="payForm" action="">
-                <label for="">Имя и Фамилия</label>
-                <input type="text" name="name" class="payInput" placeholder="Иван Петров">
-                <label for="">Телефон</label>
-                <input type="text" name="phone" class="payInput" placeholder="+7 999 000 11 22">
-                <label for="">Адрес</label>
-                <input type="text" name="address" class="payInput" placeholder="ул. Мира, д.1, кв.2">
-                <h1 class="payTitle">Банковская карта</h1>
-                <div class="kindOfCards">
-                    <img class="cardLabel" src="./images/visa.png" alt="" width="40px">
-                    <img class="cardLabel" src="./images/master.png" alt="" width="40px">
+        <div class="container-last">
+            <h2 class="advantages-title">Наши преимущества</h2>
+            <ul class="advantages">
+                <li class="advantage">Гарантия 4 года</li>
+                <li class="advantage">Trade-in</li>
+                <li class="advantage">Низкие % ставки</li>
+                <li class="advantage">В наличии все комплектации</li>
+                <li class="advantage">Работаем 24 на 7</li>
+            </ul>
+            <div class="priceAndImage">
+                <p class="price">Стоимость 43 000$</p>
+                <div class="actions">
+                    <button class="btnFeedBack">Вопрос</button>
+                    <button class="getCar">Купить</button>
                 </div>
-                <input type="password" name="number" class="payInput" placeholder="Номер карты">
-                <div class="date">
-                    <input type="text" name="month" class="cardInput" placeholder="mm">
-                    <input type="text" name="year" class="cardInput" placeholder="yyyy">
-                    <input type="password" name="cvv" class="cardInput"placeholder="cvv">
-                </div>
-                <span class="close">X</span>
-                <button class="payButton">Оплатить</button>
-            </form>
+                <img class="finalImage" src="./images/camry-final.png" alt="">
+            </div>
+            <div class="contacts-form hidden">
+                <h2 class="form-title">Заявка для обратной связи</h2>
+                <form action="" class="feedBack">
+                    <input type="text" class="input" name="name" placeholder="Ваше имя">
+                    <input type="mail" class="input" name="mail" placeholder="Электронная почта">
+                    <input type="text" class="input" name="phone" placeholder="Телефон">
+                    <input type="text" class="input" name="request" placeholder="Текст вопроса">
+
+                    <button type="submit" class="submitContacts">Отправить</button>
+                </form>
+            </div>
+                            <!--Кнопка покупки и персональные данные  -->
+            <div class="payment hidden">
+                <h1 class="payTitle">Личная информация</h1>
+                <form class="payForm" action="">
+                    <label for="">Имя и Фамилия</label>
+                    <input type="text" name="name" class="payInput" placeholder="Иван Петров">
+                    <label for="">Телефон</label>
+                    <input type="text" name="phone" class="payInput" placeholder="+7 999 000 11 22">
+                    <label for="">Адрес</label>
+                    <input type="text" name="address" class="payInput" placeholder="ул. Мира, д.1, кв.2">
+                    <h1 class="payTitle">Банковская карта</h1>
+                    <div class="kindOfCards">
+                        <img class="cardLabel" src="./images/visa.png" alt="" width="40px">
+                        <img class="cardLabel" src="./images/master.png" alt="" width="40px">
+                    </div>
+                    <input type="password" name="number" class="payInput" placeholder="Номер карты">
+                    <div class="date">
+                        <input type="text" name="month" class="cardInput" placeholder="mm">
+                        <input type="text" name="year" class="cardInput" placeholder="yyyy">
+                        <input type="password" name="cvv" class="cardInput"placeholder="cvv">
+                    </div>
+                    <span class="close">X</span>
+                    <button class="payButton">Оплатить</button>
+                </form>
+            </div>
+            <button class="up-button">Назад</button>
         </div>
-        <button class="up-button">Назад</button>
     </div>
     <script src="./JavaScript/frontOrBackSwitcher.js"></script>
     <script src="./JavaScript/mainSlider.js"></script>
