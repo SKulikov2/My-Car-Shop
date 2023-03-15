@@ -417,6 +417,14 @@ position: relative;
     row-gap: 15px;
 }
 
+.advantage {
+    width: 100%;
+}
+
+.mobile-advantages {
+    display: none;
+}
+
 .contacts-form {
     width: 300px;
     height: 300px;
@@ -477,7 +485,7 @@ position: relative;
 .actions {
     display: flex;
     justify-content: space-between;
-    margin: -10px auto
+    margin: -15px auto
 }
 
 .price {
@@ -491,9 +499,9 @@ position: relative;
 
 .finalImage {
     display: block;
-    margin: 0 auto;
-    top: 1950px;
-    width: 55%; 
+    margin: -40px auto;
+    /* top: 1950px; */
+    width: 50%; 
 }
 
 .btnFeedBack {
@@ -677,7 +685,7 @@ label {
     }
 
     .product {
-        height: 50%;
+        height: 100%;
         padding-bottom: 80px;
     }
 
@@ -690,12 +698,9 @@ label {
     }
 
     .contacts-wrapper {
-        height: auto;
+        max-height: 100vh;
     }
 
-    .container-last {
-        height: auto;
-    }
 
     .advantages {
         width: 100%;
@@ -714,19 +719,16 @@ label {
         justify-content: center;
     }
 
-    .container-last {
-        padding-bottom: 30px;
-    }
-
     .actions {
         justify-content: center;
-        column-gap: 90px;
+        column-gap: 175px;
+        margin-top: 40px;
     }
 
     .finalImage {    
         display: block;
         position: relative;
-        top: 30px;
+        top: 60px;
         margin: 0 auto;
     }
 
@@ -738,6 +740,14 @@ label {
     .getCar {
         margin-top: 0px;
         margin-right: 0px;
+    }
+
+    .contacts-form {
+        top: 1950px;
+    }
+
+    .payment {
+        top: 1890px;
     }
 } 
 
@@ -842,8 +852,37 @@ label {
         margin: 0 auto;
     }
 
+    .advantages {
+        column-gap: 80px;
+    }
+
     .finalImage {
-        top: 20px;
+        top: 50px;
+        width: 55%;
+    }
+
+    .contacts-form {
+        top: 2950px;
+    }
+
+    .payment {
+        top: 2890px;
+        width: 400px;
+        height: 440px;
+    }
+
+    .payForm {
+        width: 400px;
+        height: 40px;
+        row-gap: 0px;
+    }
+    .payButton {
+        bottom: -40px;
+    }
+
+    .close {
+        left: 400px;
+        bottom: 408px;
     }
 }
 
@@ -872,6 +911,23 @@ label {
     .colors {
         bottom: -20px;
     }
+
+    .advantages {
+        column-gap: 70px;
+    }
+
+    .finalImage {
+        top: 50px;
+        width: 60%;
+    }
+
+    .contacts-form {
+        top: 2750px;
+    }
+
+    .payment {
+        top: 2775px;
+    }
 }
 
 @media screen and (max-width:912px) {
@@ -885,6 +941,22 @@ label {
 
     .warranty {
         right: 50px;
+    }
+
+    .advantages {
+        column-gap: 60px;
+    }
+
+    .advantage {
+        font-size: 18px;
+    }
+
+    .contacts-form {
+        top: 2700px;
+    }
+
+    .payment {
+        top: 2620px;
     }
 }
 
@@ -934,6 +1006,23 @@ label {
     .colors {
         bottom: -20px;
     }
+
+    .advantages {
+        column-gap: 50px;
+    }
+
+    .finalImage {
+        top: 65px;
+        width: 75%;
+    }
+
+    .contacts-form {
+        top: 2640px;
+    }
+
+    .payment {
+        top: 2520px;
+    }
 }
 
 
@@ -952,6 +1041,10 @@ label {
 
     .warranty {
         top: 1000px
+    }
+
+    .payment {
+        top: 2520px;
     }
 }
 
@@ -973,14 +1066,14 @@ label {
         padding-right: 0px;
     }
 
-    .menu-mobile.menu-open{
+    .menu-mobile {
         display: flex;
         flex-direction: column;
         position: absolute;
         text-align: center;
         padding: 30px 15px;
         right: 70px;
-        top: -10px;
+        top: -220px;
         row-gap: 40px;
         background-color: #000;
         opacity: .7;
@@ -989,6 +1082,10 @@ label {
         border-radius: 15px;
         -webkit-transition: top 0.5s;
         transition: top 0.5s;
+    }
+
+    .menu-open {
+        top: 3px
     }
 
     .features {
@@ -1006,6 +1103,18 @@ label {
     .warranty {
         top: 990px;
         right: 20px;
+    }
+
+    .advantages {
+        column-gap: 40px;
+    }
+
+    .advantage {
+        font-size: 17px;
+    }
+
+    .payment {
+        top: 2520px;
     }
 }
     
@@ -1039,6 +1148,14 @@ label {
         top: 1060px;
         right: 20px;
     }
+
+    .contacts-form {
+        top: 2575px;
+    }
+
+    .payment {
+        top: 2420px;
+    }
 }
 
 
@@ -1070,6 +1187,62 @@ label {
     .reward {
         margin: -115px auto;
     }
+
+    .finalImage {
+        width: 80%;
+    }
+
+    .advantages {
+        display: none;
+    }
+
+    .mobile-advantages {
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+        width: 100%;
+        margin: 20px auto;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .lineOne {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-bottom: 20px;
+
+    }
+
+    .lineTwo {
+        display: flex;
+        justify-content: center;
+        column-gap: 50px;
+    }
+
+    .contacts-form {
+        top: 2520px;
+    }
+
+    .payment {
+        top: 2420px;
+        width: 300px;
+        height: 440px;
+    }
+
+    .payForm {
+        width: 300px;
+        height: 40px;
+        row-gap: 0px;
+    }
+    .payButton {
+        bottom: -40px;
+    }
+
+    .close {
+        left: 300px;
+    }
 }
 
 
@@ -1099,6 +1272,39 @@ label {
     .productImg {
         margin-top: 60px;
     }
+
+    .finalImage {
+        top: 85px;
+    }
+
+    .mobile-advantages {
+        margin: 35px auto;
+    }
+
+    .price {
+        margin-top: 50px;
+    }
+
+    .actions {
+        margin-top: 50px;
+    }
+
+    .contacts-form {
+        top: 2430px;
+    }
+
+    .payment {
+        max-width: 300px;
+        top: 2330px;
+    }
+
+    .close {
+        top: -385px;
+    }
+
+    .payTitle {
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width:610px) {
@@ -1119,6 +1325,26 @@ label {
         margin-top: 50px;
     }
 
+    .mobile-advantages {
+        display: block;
+    }
+
+    .actions {
+        width: 75%;
+        margin-top: 60px;
+    }
+
+    .finalImage {
+        top: 75px;
+    }
+
+    .contacts-form {
+        top: 2355px;
+    }
+
+    .payment {
+        top: 2255px;
+    }
 }
 
 
@@ -1214,10 +1440,20 @@ label {
     .warranty {
         top: 1260px;
     } 
-}
 
-@media screen and (max-width:540px) {
+    .contacts-form {
+        top: 2540px;
+    }
+    
+    .payment {
+        top: 2485px
+    }
 
+    .up-button {
+        right: 10px;
+        width: 60px;
+        height: 60px;
+    }
 }
 
 @media screen and (max-width:520px) {
@@ -1227,6 +1463,28 @@ label {
 
     .rewardImage {
         display: none;
+    }
+
+    .price {
+        font-size: 24px;
+    }
+
+    .getCar {
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .btnFeedBack {
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .contacts-form {
+        top: 2435px;
+    }
+
+    .payment {
+        top: 2400px;
     }
 }
 
@@ -1265,6 +1523,26 @@ label {
     .warranty {
         top: 1155px;
     }
+
+    .actions {
+        column-gap: 150px;
+    }
+
+    .finalImage {
+        width: 90%;
+    }
+
+    .contacts-form {
+        top: 2360px;
+    }
+
+    .payment {
+        top: 2280px;
+    }
+
+    .up-button {
+        display: none;
+    }
 }
 
 @media screen and (max-width:460px) {
@@ -1280,6 +1558,18 @@ label {
 
     .colors {
         font-size: 18px;
+    }
+
+    .lineTwo {
+        column-gap: 30px;
+    }
+
+    .actions {
+        column-gap: 130px;
+    }
+
+    .payment {
+        top: 2250px;
     }
 }
 
@@ -1298,6 +1588,22 @@ label {
 
     .colors {
         margin-top: 50px;    }
+
+    .mobile-advantages {
+        font-size: 19px;    
+    }
+
+    .price {
+        font-size: 22px;
+    }
+
+    .actions {
+        column-gap: 110px;
+    }
+
+    .payment {
+        top: 2250px;
+    }
 }
 
 @media screen and (max-width:412px) {
@@ -1343,5 +1649,23 @@ label {
 
     .warranty {
         top: 1115px;
+    }
+
+    .lineOne {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .contacts-form {
+        top: 2250px;
+    }
+
+    .payment {
+        top: 2250px;
+        padding: 10px 20px;
+    }
+
+    .close {
+        left: 288px;
     }
 }
